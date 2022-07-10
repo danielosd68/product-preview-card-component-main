@@ -20,6 +20,7 @@ html {
         min-height: 100vh;
 
         .content {
+            width: 700px;
             min-height: 500px;
             background-color: white;
             border-radius: 20px;
@@ -29,11 +30,16 @@ html {
             justify-content: center;
             align-items: center;
 
-            @media (max-width: 575px) {
+            @media (max-width: 750px) {
                 min-height: auto;
                 margin-left: 20px;
                 margin-right: 20px;
                 flex-direction: column;
+                width: 400px;
+            }
+
+            @media (max-width: 450px) {
+                width: 320px;
             }
 
 
@@ -41,13 +47,13 @@ html {
                 width: 50%;
                 min-height: 500px;
 
-                @media (max-width: 575px) {
+                @media (max-width: 750px) {
 
                     width: 100%;
 
                 }
 
-                @media (max-width: 575px) {
+                @media (max-width: 750px) {
                     min-height: auto;
                 }
             }
@@ -59,7 +65,7 @@ html {
                 background-image: url('images/image-product-desktop.jpg');
                 background-size: 100% 110%;
 
-                @media (max-width: 575px) {
+                @media (max-width: 750px) {
                     height: 250px;
                     border-top-left-radius: 20px;
                     border-bottom-left-radius: 0;
@@ -87,7 +93,7 @@ html {
 
             .section.second {
 
-                @media (max-width: 575px) {
+                @media (max-width: 750px) {
                     height: auto;
                 }
 

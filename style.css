@@ -13,6 +13,7 @@ html body {
 }
 
 html body .content {
+  width: 700px;
   min-height: 500px;
   background-color: white;
   border-radius: 20px;
@@ -23,12 +24,19 @@ html body .content {
   align-items: center;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   html body .content {
     min-height: auto;
     margin-left: 20px;
     margin-right: 20px;
     flex-direction: column;
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  html body .content {
+    width: 320px;
   }
 }
 
@@ -37,13 +45,13 @@ html body .content .section {
   min-height: 500px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   html body .content .section {
     width: 100%;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   html body .content .section {
     min-height: auto;
   }
@@ -56,7 +64,7 @@ html body .content .section.first {
   background-size: 100% 110%;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   html body .content .section.first {
     height: 250px;
     border-top-left-radius: 20px;
@@ -82,7 +90,7 @@ html body .content .section.first img {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   html body .content .section.second {
     height: auto;
   }
